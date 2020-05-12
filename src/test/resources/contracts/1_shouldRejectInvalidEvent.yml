@@ -1,0 +1,14 @@
+description: |
+  Should reject invalid Event , without Type or Source or Timestamp
+request:
+   method: POST
+   url: /domain/event
+   headers:
+     Content-Type: application/json
+   body: '{
+      "type": "ProductAdded",
+      "sourceRef": "catalog-service"
+    }'
+response:
+      status: 400
+      body:

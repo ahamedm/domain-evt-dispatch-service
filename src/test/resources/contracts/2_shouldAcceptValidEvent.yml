@@ -1,0 +1,18 @@
+description: |
+  Should accept Valid Event , with Type , Source, Timestamp
+request:
+   method: POST
+   url: /domain/event
+   headers:
+     Content-Type: application/json
+   body: '{
+      "type": "ProductAdded",
+	  "sourceRef": "catalog-service",
+	  "timestamp": "23234435435435",
+	  "domain" : "commerce"
+    }'
+response:
+      status: 202
+      body: "202 ACCEPTED"
+#      headers:
+#        Content-Type : text/plain;charset=ISO-8859-1
