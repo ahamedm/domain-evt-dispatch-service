@@ -1,4 +1,4 @@
-# catalog-service
+# Domain Event Dispatching Service
 Sample Simple Microservice
 
 ## SpringBoot Service
